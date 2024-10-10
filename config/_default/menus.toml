@@ -5,7 +5,7 @@
 
 [[main]]
   name = "🕹️ projets"
-  pageRef = "topics"
+  pageRef = "projets"
   weight = 20
 
 # [[main]]
