@@ -1,6 +1,6 @@
 .hugo_build.lock
 go.sum
-go.mod
+# go.mod
 tmp
 public
 resources
