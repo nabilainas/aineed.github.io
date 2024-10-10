@@ -28,7 +28,7 @@ jobs:
         uses: actions/checkout@v3
         if: github.ref == 'refs/heads/main'
         with:
-          ref: main
+          ref: gh-pages
           path: built-site
 
       - name: Setup Hugo
@@ -45,6 +45,6 @@ jobs:
           cd ${GITHUB_WORKSPACE}/built-site
           git add .
           git config user.name 'nabilainas'
-          git config user.email 'nblainas@gmail.com'
+          git config user.email 'nblainas.ij@gmail.com'
           git commit -m 'Updated site'
           git push

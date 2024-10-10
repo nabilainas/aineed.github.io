@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: http://localhost:1313/nabilainas/aineed.github.io/sitemap.xml
