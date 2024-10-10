@@ -4,13 +4,22 @@
   
     
       <url>
-            <loc>https://aineed.dev/posts/</loc>
+            <loc>https://aineed.dev/</loc>
+            <lastmod>2024-10-10T00:00:00+00:00</lastmod>
           </url>
     
   
     
       <url>
-            <loc>https://aineed.dev/</loc>
+            <loc>https://aineed.dev/projets/</loc>
+            <lastmod>2024-10-10T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://aineed.dev/posts/</loc>
+            <lastmod>2024-09-04T00:00:00+00:00</lastmod>
           </url>
     
   
