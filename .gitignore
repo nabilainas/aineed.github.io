@@ -1,5 +1,5 @@
-.hugo_build.lock
-go.sum
+# .hugo_build.lock
+# go.sum
 # go.mod
 tmp
 public
