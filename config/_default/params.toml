@@ -26,7 +26,7 @@ copyright = "Copy, _right?_ :thinking_face:"
 
 dateFormat = "2 January 2006"
 
-mainSections = ["blog", "projets"]
+mainSections = ["blog", "projets", "cv"]
 
 [author]
 name = "Nabil AÏNAS"
