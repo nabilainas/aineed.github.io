@@ -1,4 +1,7 @@
 # **Cloud & DevOps Engineer**  
+
+[Check my CV as PDF](https://cloud-object-storage-cos-static-web-hosting-7wo.s3.eu-de.cloud-object-storage.appdomain.cloud/cv_en_nabil_ainas.pdf)
+
 ## 🛠️ Skills
 
 Python • Bash •Terraform • Agile • IBM Cloud • AWS • Azure • Docker • Helm • OpenShift • K8s
