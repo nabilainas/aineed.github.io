@@ -17,8 +17,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#FFFFFF" />
   
-  <title>Projets &middot; Nabil AÏNAS</title>
-    <meta name="title" content="Projets &middot; Nabil AÏNAS" />
+  <title>Contexte de déploiement d&#39;une Application sur une plateforme cloud &middot; Nabil AÏNAS</title>
+    <meta name="title" content="Contexte de déploiement d&#39;une Application sur une plateforme cloud &middot; Nabil AÏNAS" />
   
   
   
@@ -79,8 +79,8 @@
   
   
   
-  <link rel="canonical" href="https://aineed.dev/projets/" />
-  <link rel="alternate" type="application/rss+xml" href="/projets/index.xml" title="Nabil AÏNAS" />
+  <link rel="canonical" href="https://aineed.dev/projets/azurecontainerappdeployment/" />
+  <link rel="alternate" type="application/rss+xml" href="/projets/azurecontainerappdeployment/index.xml" title="Nabil AÏNAS" />
   
   
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -95,17 +95,19 @@
   
   
   
-  <meta property="og:url" content="https://aineed.dev/projets/">
+  <meta property="og:url" content="https://aineed.dev/projets/azurecontainerappdeployment/">
   <meta property="og:site_name" content="Nabil AÏNAS">
-  <meta property="og:title" content="Projets">
-  <meta property="og:description" content=" Cette page rassemble l’ensemble de mes projets scolaires et personnels réalisés en classe ou sur mon temps libre ">
+  <meta property="og:title" content="Contexte de déploiement d&#39;une Application sur une plateforme cloud">
+  <meta property="og:description" content="Intégration d’une application web dans une usine devops pour le déploiement continu Introduction #Dans le cadre de mes études, pour mon premier cours de M2 à Sup De Vinci, nous avons eu pour objectif de déployer une application web dans le cloud, en privilégiant l’utilisation d’une approche DevOps concentrée sur le déploiement continu.">
   <meta property="og:locale" content="fr">
   <meta property="og:type" content="website">
+    <meta property="og:image" content="https://aineed.dev/projets/azurecontainerappdeployment/cover.png">
 
   
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Projets">
-  <meta name="twitter:description" content=" Cette page rassemble l’ensemble de mes projets scolaires et personnels réalisés en classe ou sur mon temps libre ">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://aineed.dev/projets/azurecontainerappdeployment/cover.png">
+  <meta name="twitter:title" content="Contexte de déploiement d&#39;une Application sur une plateforme cloud">
+  <meta name="twitter:description" content="Intégration d’une application web dans une usine devops pour le déploiement continu Introduction #Dans le cadre de mes études, pour mon premier cours de M2 à Sup De Vinci, nous avons eu pour objectif de déployer une application web dans le cloud, en privilégiant l’utilisation d’une approche DevOps concentrée sur le déploiement continu.">
 
   
   
@@ -261,92 +263,109 @@
   
   <header>
     
-    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">Projets</h1>
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">Contexte de déploiement d&#39;une Application sur une plateforme cloud</h1>
   </header>
   <section
-    class="mt-0 prose flex max-w-full flex-col dark:prose-invert lg:flex-row"
+    class="mt-12 prose flex max-w-full flex-col dark:prose-invert lg:flex-row"
   >
+    
+      <div class="order-first px-0 lg:order-last lg:max-w-xs lg:ps-8">
+        <div class="toc ps-5 lg:sticky lg:top-10">
+          <details open class="-ms-5 mt-0 overflow-hidden rounded-lg ps-5">
+  <summary
+    class="block cursor-pointer bg-neutral-100 py-1 ps-5 text-lg font-semibold text-neutral-800 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden"
+  >
+    Table of Contents
+  </summary>
+  <div class="border-s border-dotted border-neutral-300 py-2 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#contexte-et-remarques">Contexte et remarques</a></li>
+    <li><a href="#azure-containers-apps">Azure Containers Apps</a>
+      <ul>
+        <li><a href="#architecture">Architecture</a></li>
+        <li><a href="#repository">Repository</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+        </div>
+      </div>
     
     <div class="min-h-0 min-w-0 max-w-prose grow">
       <div class="lead !mb-9 text-xl">
-  Cette page rassemble l&rsquo;ensemble de mes projets scolaires et personnels réalisés en classe ou sur mon temps libre
+  Intégration d&rsquo;une application web dans une usine devops pour le déploiement continu
 </div>
 
+<h2 id="introduction" class="relative group">Introduction <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#introduction" aria-label="Anchor">#</a></span></h2><p>Dans le cadre de mes études, pour mon premier cours de M2 à <a href="https://www.supdevinci.fr/" target="_blank" rel="noreferrer">Sup De Vinci</a>, nous avons eu pour objectif de déployer une application web dans le cloud, en privilégiant l&rsquo;utilisation d&rsquo;une approche DevOps concentrée sur le déploiement continu.</p>
+<p>Il y à une infinité de possiblités pour déployer une application, cependant, avec les contraintes imposées par le formateur et les potentiels point bonus on arrive à faire des choix</p>
+<p>Concernant l&rsquo;application en elle même, il n&rsquo;y à pas de contraintes particulières etant donné que ce n&rsquo;est pas le sujet principal de l&rsquo;évaluation.
+Cependant, On à des points bonus si on met en place certaines fonctionnalités.</p>
+<p>Du côté du déploiement en lui même on nous encourage à :</p>
+<ul>
+<li>Provisionnement avec Terraform</li>
+<li>Configuration avec Ansible</li>
+<li>Monitoring avec Prometheus</li>
+<li>Visualisation avec Grafana</li>
+<li>Automatisation avec Jenkins, Gitlab CI ou Github Actions</li>
+</ul>
+<p>et par rapport au bonus on à:</p>
+<ul>
+<li>Orchestration (Kubernetes) / Conteneurisation (Docker)</li>
+<li>Multi-cloud simultané</li>
+<li>Auto-scaling</li>
+<li>Backup / Disaster recovery</li>
+</ul>
+<h2 id="contexte-et-remarques" class="relative group">Contexte et remarques <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#contexte-et-remarques" aria-label="Anchor">#</a></span></h2><p>Pour faire simple, je vais expliquer comment on en est arrivés à choisir Azure Container Apps pour notre projet. Le contexte, c&rsquo;est qu&rsquo;on devait déployer une application sur le cloud, et on était un groupe de trois à plancher sur le sujet. Au départ, toute la classe (nous compris) s’est lancée dans l’idée de déployer un cluster Kubernetes, avec du Helm pour automatiser le déploiement. Ça semblait logique, mais on s’est vite rendu compte que ça posait pas mal de soucis.</p>
+<p>D’abord, si on regarde bien le périmètre de notre besoin, on a juste une seule application à déployer. Monter un cluster Kubernetes pour ça, c’est un peu comme utiliser un marteau-pilon pour écraser une mouche : ça marche, mais c’est clairement surdimensionné. Ensuite, il y a le temps et la complexité du setup : configurer et déployer un cluster K8s, ça prend du temps, et avec une fenêtre de projet de 5 jours, on n’avait pas le luxe de perdre du temps sur des aspects d&rsquo;infrastructure trop complexes.</p>
+<p>Et puis, il y a la question du coût. On bosse avec des comptes Azure limités à 100 $ de crédits, et un cluster Kubernetes, ça peut bouffer rapidement ces crédits, surtout si on a besoin de faire des tests (créer, mettre à jour, détruire, recommencer). À ce rythme-là, on risque de cramer notre budget en un rien de temps, ce qui limite énormément nos possibilités de tests et d&rsquo;itérations.</p>
+<p>Mais si on avait seulement pris en compte le coût et le timing, ça n&rsquo;aurait pas été assez justifié pour ne pas le faire, sachant que si on se speed un peu et qu&rsquo;on est précis ça peut le faire ( Au final c&rsquo;étais largement faisable car on à eu 1 semaine en plus pour finir le projet ). Il y a un autre point important : le besoin de contrôle sur l’application. Certaines entreprises préfèrent garder la main sur leur déploiement, le stockage des images, les certificats, la gestion des ports, etc., au lieu de se reposer sur un modèle où la responsabilité est partagée avec le fournisseur cloud. Bref, avoir le contrôle peut être essentiel.</p>
+<p>Finalement, on a donc opté pour deux approches différentes (vu qu&rsquo;on avait beaucoup + de temps ), pour couvrir les deux cas d&rsquo;usage.</p>
+<ol>
+<li><strong>Premier cas d’usage</strong> : utiliser Azure Container Apps. Cette plateforme cloud est pensée pour simplifier le déploiement d&rsquo;applications conteneurisées, avec un modèle de responsabilités partagées qui nous libère de pas mal de tâches de gestion. Avec Azure Container Apps, le TTM (time-to-market) est plus rapide, et ça demande moins de maintenance et de configurations complexes. Cette approche est surtout adaptée aux équipes de développement qui veulent se concentrer sur le code et la logique de l&rsquo;app plutôt que sur l&rsquo;infrastructure.</li>
+</ol>
+<p>
+
+
+
+
+
+
+  
+  
+<figure><img src="./assets/sharedresponsibility.svg" alt="sharedresponsibility" class="mx-auto my-0 rounded-md" />
+</figure>
+</p>
+<ol start="2">
+<li><strong>Deuxième cas d’usage</strong> : rester sur Kubernetes pour un environnement où on veut un contrôle total de l&rsquo;infra. Là, on gère tout de A à Z : le cluster, le stockage, les certificats, la configuration des ports, etc. C’est une option plus lourde en gestion, mais nécessaire si on a besoin de cette flexibilité et indépendance totale.</li>
+</ol>
+<h2 id="azure-containers-apps" class="relative group">Azure Containers Apps <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#azure-containers-apps" aria-label="Anchor">#</a></span></h2><h3 id="architecture" class="relative group">Architecture <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#architecture" aria-label="Anchor">#</a></span></h3><p>Voici l&rsquo;architecture globale du projet :</p>
+<p>
+
+
+
+
+
+
+  
+  
+<figure><img src="./assets/architecture.png" alt="archi" class="mx-auto my-0 rounded-md" />
+</figure>
+</p>
+<h3 id="repository" class="relative group">Repository <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#repository" aria-label="Anchor">#</a></span></h3><p>vous pouvez avoir accès à la totalité du code en public <a href="https://gitlab.com/webapp6384540/deploy/-/tree/main" target="_blank" rel="noreferrer">ici</a></p>
 
     </div>
   </section>
   
-    <section>
-      
-        
-          <article class="mt-6 flex max-w-prose flex-row">
-  <div>
-    <h3 class="flex items-center text-xl font-semibold">
-      
-        <a
-          class="text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/projets/azurecontainerappdeployment/"
-          >Contexte de déploiement d'une Application sur une plateforme cloud</a
-        >
-      
-      
-      
-    </h3>
-    <div class="text-sm text-neutral-500 dark:text-neutral-400">
-      
-
-
-
-
-
-
-
-  
-
-  
-  
-    
-  
-
-  
-
-  
-
-  
-    
-  
-
-  
-
-
-  <div class="flex flex-row flex-wrap items-center">
-    
-    
-      <time datetime="2024-10-10 00:00:00 &#43;0000 UTC">10 October 2024</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span>
-    
-
-    
-    
-  </div>
-
-  
-  
-
-
-    </div>
-    
-      <div class="prose py-1 dark:prose-invert">
-        Intégration d&rsquo;une application web dans une usine devops pour le déploiement continu Introduction #Dans le cadre de mes études, pour mon premier cours de M2 à Sup De Vinci, nous avons eu pour objectif de déployer une application web dans le cloud, en privilégiant l&rsquo;utilisation d&rsquo;une approche DevOps concentrée sur le déploiement continu.
-      </div>
-    
-  </div>
-</article>
-
-        
-      
+    <section class="prose mt-10 dark:prose-invert">
+      <p class="border-t py-8">
+        <em>There's no articles to list here yet.</em>
+      </p>
     </section>
-    
-
   
 
       </main>
