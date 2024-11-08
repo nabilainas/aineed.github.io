@@ -1,5 +1,5 @@
 ---
-title: "l'utilisation d'IA Générative as code n’est pas aussi complexe qu’on le Pense"
+title: "La création d'application basée sur l'IA, pas aussi complexe qu'on le pense"
 groupByYear: false
 date: 2024-09-04
 showComments: True
