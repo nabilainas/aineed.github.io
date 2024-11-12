@@ -17,8 +17,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#FFFFFF" />
   
-  <title>Contexte de déploiement d&#39;une Application sur une plateforme cloud &middot; Nabil AÏNAS</title>
-    <meta name="title" content="Contexte de déploiement d&#39;une Application sur une plateforme cloud &middot; Nabil AÏNAS" />
+  <title>Déploiement d&#39;une Application sur une plateforme cloud &middot; Nabil AÏNAS</title>
+    <meta name="title" content="Déploiement d&#39;une Application sur une plateforme cloud &middot; Nabil AÏNAS" />
   
   
   
@@ -97,7 +97,7 @@
   
   <meta property="og:url" content="https://aineed.dev/projets/azurecontainerappdeployment/">
   <meta property="og:site_name" content="Nabil AÏNAS">
-  <meta property="og:title" content="Contexte de déploiement d&#39;une Application sur une plateforme cloud">
+  <meta property="og:title" content="Déploiement d&#39;une Application sur une plateforme cloud">
   <meta property="og:description" content="Intégration d’une application web dans une usine devops pour le déploiement continu Introduction #Dans le cadre de mes études, pour mon premier cours de M2 à Sup De Vinci, nous avons eu pour objectif de déployer une application web dans le cloud, en privilégiant l’utilisation d’une approche DevOps concentrée sur le déploiement continu.">
   <meta property="og:locale" content="fr">
   <meta property="og:type" content="website">
@@ -106,7 +106,7 @@
   
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://aineed.dev/projets/azurecontainerappdeployment/cover.png">
-  <meta name="twitter:title" content="Contexte de déploiement d&#39;une Application sur une plateforme cloud">
+  <meta name="twitter:title" content="Déploiement d&#39;une Application sur une plateforme cloud">
   <meta name="twitter:description" content="Intégration d’une application web dans une usine devops pour le déploiement continu Introduction #Dans le cadre de mes études, pour mon premier cours de M2 à Sup De Vinci, nous avons eu pour objectif de déployer une application web dans le cloud, en privilégiant l’utilisation d’une approche DevOps concentrée sur le déploiement continu.">
 
   
@@ -263,7 +263,7 @@
   
   <header>
     
-    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">Contexte de déploiement d&#39;une Application sur une plateforme cloud</h1>
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">Déploiement d&#39;une Application sur une plateforme cloud</h1>
   </header>
   <section
     class="mt-12 prose flex max-w-full flex-col dark:prose-invert lg:flex-row"
@@ -302,8 +302,8 @@
 </div>
 
 <h2 id="introduction" class="relative group">Introduction <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#introduction" aria-label="Anchor">#</a></span></h2><p>Dans le cadre de mes études, pour mon premier cours de M2 à <a href="https://www.supdevinci.fr/" target="_blank" rel="noreferrer">Sup De Vinci</a>, nous avons eu pour objectif de déployer une application web dans le cloud, en privilégiant l&rsquo;utilisation d&rsquo;une approche DevOps concentrée sur le déploiement continu.</p>
-<p>Il y à une infinité de possiblités pour déployer une application, cependant, avec les contraintes imposées par le formateur et les potentiels point bonus on arrive à faire des choix</p>
-<p>Concernant l&rsquo;application en elle même, il n&rsquo;y à pas de contraintes particulières etant donné que ce n&rsquo;est pas le sujet principal de l&rsquo;évaluation.
+<p>Il y a une infinité de possiblités pour déployer une application, cependant, avec les contraintes imposées par le formateur et les potentiels point bonus on arrive à faire des choix</p>
+<p>Concernant l&rsquo;application en elle même, il n&rsquo;y a pas de contraintes particulières etant donné que ce n&rsquo;est pas le sujet principal de l&rsquo;évaluation.
 Cependant, On à des points bonus si on met en place certaines fonctionnalités.</p>
 <p>Du côté du déploiement en lui même on nous encourage à :</p>
 <ul>
@@ -320,10 +320,10 @@ Cependant, On à des points bonus si on met en place certaines fonctionnalités.
 <li>Auto-scaling</li>
 <li>Backup / Disaster recovery</li>
 </ul>
-<h2 id="contexte-et-remarques" class="relative group">Contexte et remarques <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#contexte-et-remarques" aria-label="Anchor">#</a></span></h2><p>Pour faire simple, je vais expliquer comment on en est arrivés à choisir Azure Container Apps pour notre projet. Le contexte, c&rsquo;est qu&rsquo;on devait déployer une application sur le cloud, et on était un groupe de trois à plancher sur le sujet. Au départ, toute la classe (nous compris) s’est lancée dans l’idée de déployer un cluster Kubernetes, avec du Helm pour automatiser le déploiement. Ça semblait logique, mais on s’est vite rendu compte que ça posait pas mal de soucis.</p>
-<p>D’abord, si on regarde bien le périmètre de notre besoin, on a juste une seule application à déployer. Monter un cluster Kubernetes pour ça, c’est un peu comme utiliser un marteau-pilon pour écraser une mouche : ça marche, mais c’est clairement surdimensionné. Ensuite, il y a le temps et la complexité du setup : configurer et déployer un cluster K8s, ça prend du temps, et avec une fenêtre de projet de 5 jours, on n’avait pas le luxe de perdre du temps sur des aspects d&rsquo;infrastructure trop complexes.</p>
-<p>Et puis, il y a la question du coût. On bosse avec des comptes Azure limités à 100 $ de crédits, et un cluster Kubernetes, ça peut bouffer rapidement ces crédits, surtout si on a besoin de faire des tests (créer, mettre à jour, détruire, recommencer). À ce rythme-là, on risque de cramer notre budget en un rien de temps, ce qui limite énormément nos possibilités de tests et d&rsquo;itérations.</p>
-<p>Mais si on avait seulement pris en compte le coût et le timing, ça n&rsquo;aurait pas été assez justifié pour ne pas le faire, sachant que si on se speed un peu et qu&rsquo;on est précis ça peut le faire ( Au final c&rsquo;étais largement faisable car on à eu 1 semaine en plus pour finir le projet ). Il y a un autre point important : le besoin de contrôle sur l’application. Certaines entreprises préfèrent garder la main sur leur déploiement, le stockage des images, les certificats, la gestion des ports, etc., au lieu de se reposer sur un modèle où la responsabilité est partagée avec le fournisseur cloud. Bref, avoir le contrôle peut être essentiel.</p>
+<h2 id="contexte-et-remarques" class="relative group">Contexte et remarques <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#contexte-et-remarques" aria-label="Anchor">#</a></span></h2><p>Pour faire simple, je vais expliquer comment on en est arrivés à choisir Azure Container Apps pour notre projet. Le contexte, c&rsquo;est le déploiement d&rsquo;une application sur le cloud, par groupe de trois. Au départ, pratiquement toute la classe (nous compris) s’est lancée dans l’idée de déployer un cluster Kubernetes, avec du Helm pour automatiser le déploiement. Ça semblait logique, mais on s’est vite rendu compte que ça posait pas mal de soucis.</p>
+<p>D’abord, si on regarde bien le périmètre de notre besoin, on a juste une seule application à déployer. Monter un cluster Kubernetes, ça marche, mais c’est clairement surdimensionné. Ensuite, il y a le temps et la complexité du setup : configurer et déployer un cluster K8s, ça prend du temps, et avec une fenêtre de projet de 5 jours, on n’avait pas le luxe de perdre du temps sur des aspects d&rsquo;infrastructure trop complexes.</p>
+<p>Et puis, il y a la question du coût. On utilise des comptes Azure limités à 100 $ de crédits, et un cluster Kubernetes, ça peut bouffer rapidement ces crédits, surtout si on a besoin de faire des tests (créer, mettre à jour, détruire, recommencer). À ce rythme-là, on risque d&rsquo;utiliser tout notre budget en un rien de temps, ce qui limite énormément nos possibilités de tests et d&rsquo;itérations.</p>
+<p>Mais si on avait seulement pris en compte le coût et le timing, ça n&rsquo;aurait pas été assez justifié pour ne pas le faire, sachant que si on se presse un peu et qu&rsquo;on est précis ça peut le faire ( Au final c&rsquo;étais largement faisable car on à eu 1 semaine en plus pour finir le projet ). Il y a un autre point important : le besoin de contrôle sur l’application. Certaines entreprises préfèrent garder la main sur leur déploiement, le stockage des images, les certificats, la gestion des ports, etc., au lieu de se reposer sur un modèle où la responsabilité est partagée avec le fournisseur cloud. Bref, avoir le contrôle peut être essentiel.</p>
 <p>Finalement, on a donc opté pour deux approches différentes (vu qu&rsquo;on avait beaucoup + de temps ), pour couvrir les deux cas d&rsquo;usage.</p>
 <ol>
 <li><strong>Premier cas d’usage</strong> : utiliser Azure Container Apps. Cette plateforme cloud est pensée pour simplifier le déploiement d&rsquo;applications conteneurisées, avec un modèle de responsabilités partagées qui nous libère de pas mal de tâches de gestion. Avec Azure Container Apps, le TTM (time-to-market) est plus rapide, et ça demande moins de maintenance et de configurations complexes. Cette approche est surtout adaptée aux équipes de développement qui veulent se concentrer sur le code et la logique de l&rsquo;app plutôt que sur l&rsquo;infrastructure.</li>
