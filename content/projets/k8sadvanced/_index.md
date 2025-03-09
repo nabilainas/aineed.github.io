@@ -5,7 +5,7 @@ date: 2024-10-10
 showComments: True
 showTableOfContents:
   article: True
-draft: true
+draft: false
 ---
 {{< lead >}}
 Post configuration avancée d'outils sur un cluster kubernetes
