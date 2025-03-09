@@ -17,8 +17,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#FFFFFF" />
   
-  <title>Posts &middot; Nabil AÏNAS</title>
-    <meta name="title" content="Posts &middot; Nabil AÏNAS" />
+  <title>kubernetes avancé &middot; Nabil AÏNAS</title>
+    <meta name="title" content="kubernetes avancé &middot; Nabil AÏNAS" />
   
   
   
@@ -79,8 +79,8 @@
   
   
   
-  <link rel="canonical" href="https://aineed.dev/posts/" />
-  <link rel="alternate" type="application/rss+xml" href="/posts/index.xml" title="Nabil AÏNAS" />
+  <link rel="canonical" href="https://aineed.dev/projets/k8sadvanced/" />
+  <link rel="alternate" type="application/rss+xml" href="/projets/k8sadvanced/index.xml" title="Nabil AÏNAS" />
   
   
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -95,17 +95,17 @@
   
   
   
-  <meta property="og:url" content="https://aineed.dev/posts/">
+  <meta property="og:url" content="https://aineed.dev/projets/k8sadvanced/">
   <meta property="og:site_name" content="Nabil AÏNAS">
-  <meta property="og:title" content="Posts">
-  <meta property="og:description" content="Ici sont rassemblés mes différents avis et articles que je trouve intéressants de partager.">
+  <meta property="og:title" content="kubernetes avancé">
+  <meta property="og:description" content="Post configuration avancée d’outils sur un cluster kubernetes Contexte #Le but du projet est de mettre en place et gérer des pipelines CI/CD relativement complexes en utilisant Docker, Terraform, GitLab CI/CD, Kubernetes, ArgoCD, et Helm.">
   <meta property="og:locale" content="fr">
   <meta property="og:type" content="website">
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Posts">
-  <meta name="twitter:description" content="Ici sont rassemblés mes différents avis et articles que je trouve intéressants de partager.">
+  <meta name="twitter:title" content="kubernetes avancé">
+  <meta name="twitter:description" content="Post configuration avancée d’outils sur un cluster kubernetes Contexte #Le but du projet est de mettre en place et gérer des pipelines CI/CD relativement complexes en utilisant Docker, Terraform, GitLab CI/CD, Kubernetes, ArgoCD, et Helm.">
 
   
   
@@ -261,7 +261,7 @@
   
   <header>
     
-    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">Posts</h1>
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">kubernetes avancé</h1>
   </header>
   <section
     class="mt-0 prose flex max-w-full flex-col dark:prose-invert lg:flex-row"
@@ -269,84 +269,94 @@
     
     <div class="min-h-0 min-w-0 max-w-prose grow">
       <div class="lead !mb-9 text-xl">
-  Ici sont rassemblés mes différents avis et articles que je trouve intéressants de partager.
+  Post configuration avancée d&rsquo;outils sur un cluster kubernetes
 </div>
 
+<h1 id="contexte" class="relative group">Contexte <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#contexte" aria-label="Anchor">#</a></span></h1><p>Le but du projet est de mettre en place et gérer des pipelines CI/CD relativement complexes en utilisant Docker, Terraform, GitLab CI/CD, Kubernetes, ArgoCD, et Helm.
+Il tient compte des connaissances que vous avez acquises au cours des années précédentes sur une grande partie de ces différentes technologies. Les consignes du projet, en deux parties. L&rsquo;objectif est de voir deux modèles de CI/CD différents, un en mode &ldquo;push&rdquo; (Gitlab CI/CD), un en mode &ldquo;pull&rdquo; (GitOps)</p>
+<p>On va travailler sur differents environnemets, local et prod :</p>
+<ul>
+<li>k3d pour le développement local</li>
+<li>Azure Kubernetes Service (AKS) pour la production</li>
+</ul>
+<p>Il est divisé en 2 parties :
+Partie 1: CI/CD avec GitLab et Kubernetes
+Partie 2: CI/CD avec ArgoCD</p>
+<p>Plus de détails <a href="https://gitlab.com/examens_tsaquet/projet-ci-cd-m2-do-2024" target="_blank" rel="noreferrer">ici</a></p>
+<h1 id="configuration-de-lenvironnment-local-mac" class="relative group">Configuration de l&rsquo;environnment local (MAC) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#configuration-de-lenvironnment-local-mac" aria-label="Anchor">#</a></span></h1><p>k3d is a lightweight wrapper to run k3s (Rancher Lab’s minimal Kubernetes distribution) in docker.</p>
+<p>Prérequis 🔑</p>
+<table>
+<thead>
+<tr>
+<th>Outil</th>
+<th>Version</th>
+<th>lien</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Homebrew</td>
+<td>4.4.6</td>
+<td><a href="https://brew.sh/" target="_blank" rel="noreferrer">ici</a></td>
+</tr>
+<tr>
+<td>Docker</td>
+<td>25.0.3</td>
+<td><a href="https://docs.docker.com/desktop/setup/install/mac-install/" target="_blank" rel="noreferrer">ici</a></td>
+</tr>
+<tr>
+<td>helm</td>
+<td>3.16.3</td>
+<td><a href="https://formulae.brew.sh/formula/helm" target="_blank" rel="noreferrer">ici</a></td>
+</tr>
+</tbody>
+</table>
+<p>L&rsquo;installation de k3d va se faire avec l&rsquo;utilisation du package manager homebrew sur mac, pour cela on lance la commande :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">brew install k3d
+</span></span></code></pre></div><p>Après avoir lancé docker, on lance la commande :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">k3d cluster create mycluster
+</span></span></code></pre></div><p>
 
+
+
+
+
+
+  
+  
+<figure><img src="./assets/createcluster.png" alt="createcluster" class="mx-auto my-0 rounded-md" />
+</figure>
+
+
+
+
+
+
+
+
+  
+  
+<figure><img src="./assets/containersk3d.png" alt="createcluster" class="mx-auto my-0 rounded-md" />
+</figure>
+</p>
+<h1 id="connexion-de-lagent-local-avec-gitlab" class="relative group">Connexion de l&rsquo;agent local avec Gitlab <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#connexion-de-lagent-local-avec-gitlab" aria-label="Anchor">#</a></span></h1><h1 id="déploiement-de-lapplication-en-local" class="relative group">Déploiement de l&rsquo;application en local <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#d%c3%a9ploiement-de-lapplication-en-local" aria-label="Anchor">#</a></span></h1><p>argo cd</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">kubectl create namespace argocd                                                                    
+</span></span><span class="line"><span class="cl">kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+</span></span><span class="line"><span class="cl">kubectl -n argocd get secret argocd-initial-admin-secret -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s2">&#34;{.data.password}&#34;</span> <span class="p">|</span> base64 -d
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">kubectl port-forward svc/argocd-server -n argocd 8888:443 
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">kc create namespace ocf-core-namespace
+</span></span><span class="line"><span class="cl">kubectl create secret docker-registry gitlab-registry-secret -n ocf-core-namespace --docker-server<span class="o">=</span>registry.gitlab.com --docker-username<span class="o">=</span>nabilainas --docker-password<span class="o">=</span>TOKEN   --docker-email<span class="o">=</span>EMAIL
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">kubectl port-forward svc/argocd-server -n argocd 8888:443 
+</span></span><span class="line"><span class="cl">kubectl -n argocd get secret argocd-initial-admin-secret -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s2">&#34;{.data.password}&#34;</span> <span class="p">|</span> base64 -d
+</span></span></code></pre></div>
     </div>
   </section>
   
-    <section>
-      
-        
-          <article class="mt-6 flex max-w-prose flex-row">
-  <div>
-    <h3 class="flex items-center text-xl font-semibold">
-      
-        <a
-          class="text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/posts/ia/"
-          >La création d'application basée sur l'IA, pas aussi complexe qu'on le pense</a
-        >
-      
-      
-      
-    </h3>
-    <div class="text-sm text-neutral-500 dark:text-neutral-400">
-      
-
-
-
-
-
-
-
-  
-
-  
-  
-    
-  
-
-  
-
-  
-
-  
-    
-  
-
-  
-
-
-  <div class="flex flex-row flex-wrap items-center">
-    
-    
-      <time datetime="2024-09-04 00:00:00 &#43;0000 UTC">4 September 2024</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span>
-    
-
-    
-    
-  </div>
-
-  
-  
-
-
-    </div>
-    
-      <div class="prose py-1 dark:prose-invert">
-        Utilisation des API d&rsquo;intelligence artificielle générative pour la création d&rsquo;un outil de gestion de contenu Introduction # On voit de plus en plus d&rsquo;entreprises et de startups parler de leurs applications &ldquo;propulsées par l’IA&rdquo;.
-      </div>
-    
-  </div>
-</article>
-
-        
-      
+    <section class="prose mt-10 dark:prose-invert">
+      <p class="border-t py-8">
+        <em>There's no articles to list here yet.</em>
+      </p>
     </section>
-    
-
   
 
       </main>

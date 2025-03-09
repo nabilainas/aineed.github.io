@@ -17,8 +17,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#FFFFFF" />
   
-  <title>Posts &middot; Nabil AÏNAS</title>
-    <meta name="title" content="Posts &middot; Nabil AÏNAS" />
+  <title>La création d&#39;application basée sur l&#39;IA, pas aussi complexe qu&#39;on le pense &middot; Nabil AÏNAS</title>
+    <meta name="title" content="La création d&#39;application basée sur l&#39;IA, pas aussi complexe qu&#39;on le pense &middot; Nabil AÏNAS" />
   
   
   
@@ -79,8 +79,8 @@
   
   
   
-  <link rel="canonical" href="https://aineed.dev/posts/" />
-  <link rel="alternate" type="application/rss+xml" href="/posts/index.xml" title="Nabil AÏNAS" />
+  <link rel="canonical" href="https://aineed.dev/posts/ia/" />
+  <link rel="alternate" type="application/rss+xml" href="/posts/ia/index.xml" title="Nabil AÏNAS" />
   
   
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -95,17 +95,17 @@
   
   
   
-  <meta property="og:url" content="https://aineed.dev/posts/">
+  <meta property="og:url" content="https://aineed.dev/posts/ia/">
   <meta property="og:site_name" content="Nabil AÏNAS">
-  <meta property="og:title" content="Posts">
-  <meta property="og:description" content="Ici sont rassemblés mes différents avis et articles que je trouve intéressants de partager.">
+  <meta property="og:title" content="La création d&#39;application basée sur l&#39;IA, pas aussi complexe qu&#39;on le pense">
+  <meta property="og:description" content="Utilisation des API d’intelligence artificielle générative pour la création d’un outil de gestion de contenu Introduction # On voit de plus en plus d’entreprises et de startups parler de leurs applications “propulsées par l’IA”.">
   <meta property="og:locale" content="fr">
   <meta property="og:type" content="website">
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Posts">
-  <meta name="twitter:description" content="Ici sont rassemblés mes différents avis et articles que je trouve intéressants de partager.">
+  <meta name="twitter:title" content="La création d&#39;application basée sur l&#39;IA, pas aussi complexe qu&#39;on le pense">
+  <meta name="twitter:description" content="Utilisation des API d’intelligence artificielle générative pour la création d’un outil de gestion de contenu Introduction # On voit de plus en plus d’entreprises et de startups parler de leurs applications “propulsées par l’IA”.">
 
   
   
@@ -261,92 +261,109 @@
   
   <header>
     
-    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">Posts</h1>
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">La création d&#39;application basée sur l&#39;IA, pas aussi complexe qu&#39;on le pense</h1>
   </header>
   <section
-    class="mt-0 prose flex max-w-full flex-col dark:prose-invert lg:flex-row"
+    class="mt-12 prose flex max-w-full flex-col dark:prose-invert lg:flex-row"
   >
+    
+      <div class="order-first px-0 lg:order-last lg:max-w-xs lg:ps-8">
+        <div class="toc ps-5 lg:sticky lg:top-10">
+          <details open class="-ms-5 mt-0 overflow-hidden rounded-lg ps-5">
+  <summary
+    class="block cursor-pointer bg-neutral-100 py-1 ps-5 text-lg font-semibold text-neutral-800 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden"
+  >
+    Table of Contents
+  </summary>
+  <div class="border-s border-dotted border-neutral-300 py-2 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a>
+      <ul>
+        <li><a href="#la-réalité-derrière-les-applications-ia--quelques-appels-api">La réalité derrière les applications “IA” : quelques appels API</a></li>
+        <li><a href="#pourquoi-tant-dentreprises-adoptent-les-apis-dia-">Pourquoi tant d’entreprises adoptent les APIs d’IA ?</a></li>
+        <li><a href="#comment-intégrer-une-api-de-modèle-de-langage-dans-une-application-">Comment intégrer une API de modèle de langage dans une application ?</a></li>
+        <li><a href="#api-ia--des-avantages-mais-aussi-des-limites">API IA : des avantages, mais aussi des limites</a></li>
+        <li><a href="#en-conclusion">En conclusion</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+        </div>
+      </div>
     
     <div class="min-h-0 min-w-0 max-w-prose grow">
       <div class="lead !mb-9 text-xl">
-  Ici sont rassemblés mes différents avis et articles que je trouve intéressants de partager.
+  Utilisation des API d&rsquo;intelligence artificielle générative pour la création d&rsquo;un outil de gestion de contenu
 </div>
 
+<h2 id="introduction" class="relative group">Introduction <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#introduction" aria-label="Anchor">#</a></span></h2><p>
+
+
+
+
+
+
+  
+  
+<figure><img src="./assets/ia_meme.jpg" alt="meme" class="mx-auto my-0 rounded-md" />
+</figure>
+</p>
+<p>On voit de plus en plus d&rsquo;entreprises et de startups parler de leurs applications &ldquo;propulsées par l’IA&rdquo;. Ça sonne impressionnant, mais en réalité, beaucoup de ces applications reposent sur des modèles déjà existants, accessibles simplement via des appels API. Ce n’est pas de la &ldquo;magie&rdquo;, et ce n’est pas forcément aussi compliqué que ce qu’on pourrait croire. Si vous envisagez de créer une application utilisant de l&rsquo;IA, il y a de fortes chances que vous n&rsquo;ayez pas besoin de compétences en machine learning ni d&rsquo;une équipe de data scientists !</p>
+<p>Dans cet article, on va décrypter cette tendance et voir comment les entreprises utilisent des modèles de langage (comme ceux d’OpenAI ou de Google) pour créer leurs applications &ldquo;IA&rdquo; en toute simplicité.</p>
+<h3 id="la-réalité-derrière-les-applications-ia--quelques-appels-api" class="relative group">La réalité derrière les applications “IA” : quelques appels API <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#la-r%c3%a9alit%c3%a9-derri%c3%a8re-les-applications-ia--quelques-appels-api" aria-label="Anchor">#</a></span></h3><p>Alors, comment fonctionnent la majorité des applications dites &ldquo;IA&rdquo; ? Beaucoup d&rsquo;entreprises se connectent simplement à des APIs de modèles de langage pré-entrainés, comme GPT d’OpenAI, qui est capable de comprendre et de générer du texte. L’API est une sorte de &ldquo;télécommande&rdquo; qui donne accès aux capacités du modèle sans avoir à s’occuper du code complexe et de l&rsquo;entraînement derrière.</p>
+<p>En pratique, voici ce que ça donne : un développeur envoie du texte (une question, une phrase, ou autre) à l’API, et celle-ci renvoie une réponse élaborée. Le tout est prêt à l’emploi et peut être intégré en quelques lignes de code. Par exemple :</p>
+<ul>
+<li><strong>Génération de contenu</strong> : L’application peut générer des textes ou des suggestions en réponse à des besoins précis.</li>
+<li><strong>Analyse de texte</strong> : Elle peut résumer des textes, extraire des informations ou déterminer si un avis est positif ou négatif.</li>
+</ul>
+<p>Résultat : au lieu de créer un modèle d’IA complexe, on obtient des fonctionnalités “intelligentes” en un minimum de temps et d&rsquo;efforts.</p>
+<h3 id="pourquoi-tant-dentreprises-adoptent-les-apis-dia-" class="relative group">Pourquoi tant d’entreprises adoptent les APIs d’IA ? <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#pourquoi-tant-dentreprises-adoptent-les-apis-dia-" aria-label="Anchor">#</a></span></h3><p>Utiliser une API pour intégrer de l’IA a plusieurs avantages, qui expliquent pourquoi tant d’entreprises le font :</p>
+<ol>
+<li>
+<p><strong>Gain de temps et d’argent</strong> : Entraîner un modèle IA de zéro est coûteux et prend du temps. Avec une API, pas besoin de tout ça ; l’IA est accessible presque instantanément.</p>
+</li>
+<li>
+<p><strong>Pas besoin d’être un expert</strong> : Il suffit de savoir intégrer une API dans une application, ce qui est à la portée de n’importe quel développeur.</p>
+</li>
+<li>
+<p><strong>Robustesse</strong> : Les géants de la tech (OpenAI, Google, Anthropic…) mettent à jour leurs modèles pour les rendre plus performants. Utiliser leur API, c’est profiter de modèles toujours au top sans avoir à gérer la maintenance.</p>
+</li>
+</ol>
+<h3 id="comment-intégrer-une-api-de-modèle-de-langage-dans-une-application-" class="relative group">Comment intégrer une API de modèle de langage dans une application ? <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#comment-int%c3%a9grer-une-api-de-mod%c3%a8le-de-langage-dans-une-application-" aria-label="Anchor">#</a></span></h3><p>Voici comment ça se passe en général :</p>
+<ol>
+<li><strong>Obtenir une clé API</strong> : L’entreprise s’inscrit chez le fournisseur d’API (par exemple OpenAI), et reçoit une clé d’accès.</li>
+<li><strong>Configurer l&rsquo;API</strong> : On ajoute cette clé dans l’application pour autoriser les appels API.</li>
+<li><strong>Faire les appels API</strong> : Quand l’application a besoin d’une réponse, elle envoie une requête (en langage naturel, souvent) à l&rsquo;API qui renvoie une réponse en quelques millisecondes.</li>
+<li><strong>Personnaliser l’expérience utilisateur</strong> : En fonction de l’application, on peut &ldquo;styliser&rdquo; ou adapter les réponses reçues pour que ça colle au style ou à la fonction de l’application.</li>
+</ol>
+<p>En quelques jours, une application peut être prête, sans passer par le casse-tête du développement IA traditionnel.</p>
+<h3 id="api-ia--des-avantages-mais-aussi-des-limites" class="relative group">API IA : des avantages, mais aussi des limites <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#api-ia--des-avantages-mais-aussi-des-limites" aria-label="Anchor">#</a></span></h3><p>Les APIs IA facilitent la création d’applis intelligentes, mais elles ne sont pas parfaites. Voici quelques éléments à prendre en compte :</p>
+<ul>
+<li>
+<p><strong>Dépendance</strong> : Vous êtes tributaire des fournisseurs. Une hausse de prix ou un changement de politique peut vous impacter.</p>
+</li>
+<li>
+<p><strong>Personnalisation limitée</strong> : Même si les modèles de langage sont puissants, ils restent génériques. Pour des besoins très spécifiques, vous pourriez avoir besoin d’un modèle personnalisé (plus complexe à obtenir).</p>
+</li>
+<li>
+<p><strong>Confidentialité des données</strong> : Les données que vous envoyez aux API peuvent être sensibles, alors attention aux politiques de confidentialité et de sécurité des fournisseurs.</p>
+</li>
+</ul>
+<h3 id="en-conclusion" class="relative group">En conclusion <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#en-conclusion" aria-label="Anchor">#</a></span></h3><p>Créer une application IA n’a jamais été aussi simple grâce aux APIs de modèles de langage. En quelques appels, on peut enrichir une appli de fonctionnalités intelligentes, sans avoir besoin de toute la structure lourde d’un modèle IA maison. Cependant, même si c’est plus accessible, les entreprises doivent rester transparentes : la plupart des applications qui se disent &ldquo;IA&rdquo; reposent simplement sur des modèles déjà existants.</p>
+<p>Alors, si vous voulez créer une appli IA, sachez que la technologie est à portée de main. Moins complexe, mais tout aussi puissant.</p>
 
     </div>
   </section>
   
-    <section>
-      
-        
-          <article class="mt-6 flex max-w-prose flex-row">
-  <div>
-    <h3 class="flex items-center text-xl font-semibold">
-      
-        <a
-          class="text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/posts/ia/"
-          >La création d'application basée sur l'IA, pas aussi complexe qu'on le pense</a
-        >
-      
-      
-      
-    </h3>
-    <div class="text-sm text-neutral-500 dark:text-neutral-400">
-      
-
-
-
-
-
-
-
-  
-
-  
-  
-    
-  
-
-  
-
-  
-
-  
-    
-  
-
-  
-
-
-  <div class="flex flex-row flex-wrap items-center">
-    
-    
-      <time datetime="2024-09-04 00:00:00 &#43;0000 UTC">4 September 2024</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span>
-    
-
-    
-    
-  </div>
-
-  
-  
-
-
-    </div>
-    
-      <div class="prose py-1 dark:prose-invert">
-        Utilisation des API d&rsquo;intelligence artificielle générative pour la création d&rsquo;un outil de gestion de contenu Introduction # On voit de plus en plus d&rsquo;entreprises et de startups parler de leurs applications &ldquo;propulsées par l’IA&rdquo;.
-      </div>
-    
-  </div>
-</article>
-
-        
-      
+    <section class="prose mt-10 dark:prose-invert">
+      <p class="border-t py-8">
+        <em>There's no articles to list here yet.</em>
+      </p>
     </section>
-    
-
   
 
       </main>
