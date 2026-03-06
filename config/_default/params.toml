@@ -21,18 +21,18 @@ weight = 1
 rtl = false
 
 title = "aineed.dev"
-description = "Dev and Cloud"
+description = "Articles et projets autour du cloud, du DevOps et de l'automatisation."
 copyright = "Copy, _right?_ :thinking_face:"
 
 dateFormat = "2 January 2006"
 
-mainSections = ["blog", "projets", "cv"]
+mainSections = ["posts", "projets", "cv"]
 
 [author]
 name = "Nabil AÏNAS"
 image = "auth.jpeg"
-headline = ":cloud: Cloud & :computer: DevOps engineer"
-bio = "Engineer @BNP Paribas - :laptop: Python & Teaching lover"
+headline = "Cloud & DevOps Engineer"
+bio = "J'aide les equipes a construire des plateformes cloud fiables, automatisables et orientees produit."
 
 links = [
   { email = "mailto:nblainas@gmail.com" },
@@ -57,7 +57,7 @@ showScrollToTop = true
 [homepage]
 layout = "profile" # valid options: page, profile, custom
 showRecent = true
-recentLimit = 5
+recentLimit = 6
 
 
 [article]
