@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Grafana on Nabil AÏNAS</title>
+    <link>https://aineed.dev/technos/grafana/</link>
+    <description>Recent content in Grafana on Nabil AÏNAS</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <lastBuildDate>Fri, 06 Mar 2026 23:15:48 +0100</lastBuildDate>
+    <atom:link href="https://aineed.dev/technos/grafana/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Déploiement d&#39;une Application sur une plateforme cloud</title>
+      <link>https://aineed.dev/projets/azurecontainerappdeployment/</link>
+      <pubDate>Thu, 10 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://aineed.dev/projets/azurecontainerappdeployment/</guid>
+      <description>Comparaison de choix de deploiement cloud et retour d&amp;rsquo;experience autour d&amp;rsquo;Azure Container Apps vs Kubernetes.</description>
+    </item>
+  </channel>
+</rss>

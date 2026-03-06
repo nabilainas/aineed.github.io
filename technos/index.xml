@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Technos on Nabil AÏNAS</title>
+    <link>https://aineed.dev/technos/</link>
+    <description>Recent content in Technos on Nabil AÏNAS</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <lastBuildDate>Fri, 06 Mar 2026 23:15:48 +0100</lastBuildDate>
+    <atom:link href="https://aineed.dev/technos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aks</title>
+      <link>https://aineed.dev/technos/aks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aineed.dev/technos/aks/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ansible</title>
+      <link>https://aineed.dev/technos/ansible/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aineed.dev/technos/ansible/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Argocd</title>
+      <link>https://aineed.dev/technos/argocd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aineed.dev/technos/argocd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Azure</title>
+      <link>https://aineed.dev/technos/azure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aineed.dev/technos/azure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Docker</title>
+      <link>https://aineed.dev/technos/docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aineed.dev/technos/docker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Github-Actions</title>
+      <link>https://aineed.dev/technos/github-actions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aineed.dev/technos/github-actions/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gitlab-Ci</title>
+      <link>https://aineed.dev/technos/gitlab-ci/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aineed.dev/technos/gitlab-ci/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Grafana</title>
+      <link>https://aineed.dev/technos/grafana/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aineed.dev/technos/grafana/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Helm</title>
+      <link>https://aineed.dev/technos/helm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aineed.dev/technos/helm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>K3d</title>
+      <link>https://aineed.dev/technos/k3d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aineed.dev/technos/k3d/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kubernetes</title>
+      <link>https://aineed.dev/technos/kubernetes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aineed.dev/technos/kubernetes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prometheus</title>
+      <link>https://aineed.dev/technos/prometheus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aineed.dev/technos/prometheus/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Terraform</title>
+      <link>https://aineed.dev/technos/terraform/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aineed.dev/technos/terraform/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Openai</title>
+      <link>https://aineed.dev/technos/openai/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aineed.dev/technos/openai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>https://aineed.dev/technos/python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aineed.dev/technos/python/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

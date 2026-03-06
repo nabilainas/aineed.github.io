@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Openai on Nabil AÏNAS</title>
+    <link>https://aineed.dev/technos/openai/</link>
+    <description>Recent content in Openai on Nabil AÏNAS</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <lastBuildDate>Fri, 06 Mar 2026 23:15:48 +0100</lastBuildDate>
+    <atom:link href="https://aineed.dev/technos/openai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>La création d&#39;application basée sur l&#39;IA, pas aussi complexe qu&#39;on le pense</title>
+      <link>https://aineed.dev/posts/ia/</link>
+      <pubDate>Wed, 04 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://aineed.dev/posts/ia/</guid>
+      <description>Un retour d&amp;rsquo;experience sur l&amp;rsquo;integration de modeles IA via API: benefices, limites et bonnes pratiques de mise en oeuvre.</description>
+    </item>
+  </channel>
+</rss>
