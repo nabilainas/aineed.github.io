@@ -1,0 +1,20 @@
+{{- /* Rich JSON index used by the theme search feature. */ -}}
+{{- $pages := where .Site.RegularPages "Type" "in" site.Params.mainSections -}}
+{{- $index := slice -}}
+{{- range $pages -}}
+  {{- $item := dict
+    "title" .Title
+    "summary" (.Summary | plainify)
+    "content" (.Plain | htmlUnescape)
+    "tags" (.Params.tags | default (slice))
+    "categories" (.Params.categories | default (slice))
+    "technos" (.Params.technos | default (slice))
+    "series" (.Params.series | default (slice))
+    "keywords" (.Params.keywords | default (slice))
+    "section" .Section
+    "date" (.Date.Format "2006-01-02")
+    "permalink" .RelPermalink
+  -}}
+  {{- $index = $index | append $item -}}
+{{- end -}}
+{{- $index | jsonify -}}

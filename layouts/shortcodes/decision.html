@@ -1,0 +1,5 @@
+<aside class="my-6 rounded-xl border border-emerald-700/50 bg-emerald-950/20 p-4">
+  <p class="m-0"><strong>Decision:</strong> {{ .Get "title" }}</p>
+  {{ with .Get "why" }}<p class="mb-0 mt-2"><strong>Pourquoi:</strong> {{ . }}</p>{{ end }}
+  {{ with .Get "tradeoff" }}<p class="mb-0 mt-2"><strong>Compromis:</strong> {{ . }}</p>{{ end }}
+</aside>

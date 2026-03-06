@@ -1,0 +1,9 @@
+<section class="my-8 rounded-xl border border-neutral-700/60 bg-neutral-900/30 p-5">
+  <h2 class="mt-0">Case Study</h2>
+  {{ with .Get "contexte" }}<p><strong>Contexte:</strong> {{ . }}</p>{{ end }}
+  {{ with .Get "probleme" }}<p><strong>Probleme:</strong> {{ . }}</p>{{ end }}
+  {{ with .Get "solution" }}<p><strong>Solution:</strong> {{ . }}</p>{{ end }}
+  {{ with .Get "impact" }}<p><strong>Impact:</strong> {{ . }}</p>{{ end }}
+  {{ with .Get "stack" }}<p><strong>Stack:</strong> {{ . }}</p>{{ end }}
+  {{ with .Get "repo" }}<p><strong>Repository:</strong> <a href="{{ . }}" target="_blank" rel="noopener">{{ . }}</a></p>{{ end }}
+</section>

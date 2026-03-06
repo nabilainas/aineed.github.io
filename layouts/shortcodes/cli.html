@@ -1,0 +1,4 @@
+<div class="my-6 rounded-xl border border-neutral-700/60 bg-neutral-950/70 p-4">
+  {{ with .Get "title" }}<p class="mt-0 mb-2"><strong>{{ . }}</strong></p>{{ end }}
+  <pre class="m-0 overflow-x-auto"><code>{{ .Inner | htmlEscape | safeHTML }}</code></pre>
+</div>

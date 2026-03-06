@@ -4,5 +4,7 @@ groupByYear: false
 showReadingTime: true
 ---
 {{< lead >}}
-Ici sont rassemblés mes différents avis et articles que je trouve intéressants de partager.
+Articles techniques cloud/DevOps avec retours d'experience, guides pragmatiques et analyses d'architecture.
 {{< /lead >}}
+
+Utilisez les tags, series et categories pour filtrer rapidement les sujets qui vous interessent.

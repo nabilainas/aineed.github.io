@@ -2,14 +2,30 @@
 title: "Déploiement d'une Application sur une plateforme cloud"
 groupByYear: false
 date: 2024-10-10
-showComments: True
+description: "Case study de deploiement continu d'une application sur Azure Container Apps avec outillage DevOps."
+summary: "Comparaison de choix de deploiement cloud et retour d'experience autour d'Azure Container Apps vs Kubernetes."
+tags: ["devops", "deploiement", "cloud"]
+categories: ["projet", "case-study"]
+technos: ["azure", "terraform", "ansible", "prometheus", "grafana", "github-actions"]
+series: ["Case Studies Cloud"]
+keywords: ["azure container apps", "deploiement continu", "devops"]
+showComments: true
 showTableOfContents:
-  article: True
+  article: true
 draft: false
 ---
 {{< lead >}}
 Intégration d'une application web dans une usine devops pour le déploiement continu
 {{< /lead >}}
+
+{{< case-study
+  contexte="Projet academique de deploiement cloud en equipe, sous contrainte de temps et de budget Azure."
+  probleme="Livrer rapidement une application tout en gardant un niveau de qualite operationnelle."
+  solution="Choix d'Azure Container Apps pour accelerer le time-to-market, avec comparaison a une approche Kubernetes."
+  impact="Mise en production plus rapide, simplification operationnelle et meilleure maitrise des credits cloud."
+  stack="Azure Container Apps, Terraform, Ansible, Prometheus, Grafana, GitHub Actions"
+  repo="https://gitlab.com/webapp6384540/deploy/-/tree/main"
+>}}
 
 ## Introduction
 
@@ -63,3 +79,5 @@ Voici l'architecture globale du projet :
 ### Repository
 
 vous pouvez avoir accès à la totalité du code en public [ici](https://gitlab.com/webapp6384540/deploy/-/tree/main)
+
+{{< related >}}

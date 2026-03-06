@@ -2,9 +2,16 @@
 title: "La création d'application basée sur l'IA, pas aussi complexe qu'on le pense"
 groupByYear: false
 date: 2024-09-04
-showComments: True
+description: "Comment integrer des capacites IA dans une application via APIs de modeles de langage, sans equipe ML dediee."
+summary: "Un retour d'experience sur l'integration de modeles IA via API: benefices, limites et bonnes pratiques de mise en oeuvre."
+tags: ["ia", "api", "engineering"]
+categories: ["architecture"]
+technos: ["openai", "python"]
+series: ["Construire des applications IA pragmatiques"]
+keywords: ["application IA", "API modele de langage", "integration IA"]
+showComments: true
 showTableOfContents:
-  article: True
+  article: true
 draft: false
 ---
 {{< lead >}}
@@ -65,3 +72,5 @@ Les APIs IA facilitent la création d’applis intelligentes, mais elles ne sont
 Créer une application IA n’a jamais été aussi simple grâce aux APIs de modèles de langage. En quelques appels, on peut enrichir une appli de fonctionnalités intelligentes, sans avoir besoin de toute la structure lourde d’un modèle IA maison. Cependant, même si c’est plus accessible, les entreprises doivent rester transparentes : la plupart des applications qui se disent "IA" reposent simplement sur des modèles déjà existants.
 
 Alors, si vous voulez créer une appli IA, sachez que la technologie est à portée de main. Moins complexe, mais tout aussi puissant.
+
+{{< related >}}

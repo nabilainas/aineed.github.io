@@ -72,9 +72,10 @@ editAppendPath = true
 showHeadingAnchors = true
 showPagination = true
 invertPagination = false
+showRelatedContent = true
 showReadingTime = true
 showTableOfContents = false
-showTaxonomies = false
+showTaxonomies = true
 showWordCount = false
 showComments = false
 sharingLinks = [
@@ -91,12 +92,12 @@ sharingLinks = [
 showBreadcrumbs = false
 showSummary = true
 showTableOfContents = false
-showTaxonomies = false
+showTaxonomies = true
 groupByYear = true
 paginationWidth = 1
 
 [sitemap]
-excludedKinds = ["taxonomy", "term"]
+excludedKinds = []
 
 [taxonomy]
 showTermCount = true

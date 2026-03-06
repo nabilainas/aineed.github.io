@@ -2,14 +2,29 @@
 title: "kubernetes avancé"
 groupByYear: false
 date: 2024-10-10
-showComments: True
+description: "Case study d'un projet CI/CD avance: GitLab, Kubernetes, ArgoCD, Helm, et environnements local/AKS."
+summary: "Mise en place de deux modeles CI/CD (push et pull) avec outillage cloud-native de bout en bout."
+tags: ["kubernetes", "cicd", "gitops"]
+categories: ["projet", "case-study"]
+technos: ["kubernetes", "k3d", "aks", "gitlab-ci", "argocd", "helm", "terraform", "docker"]
+series: ["Case Studies Cloud"]
+keywords: ["kubernetes avance", "gitops", "argocd", "gitlab ci"]
+showComments: true
 showTableOfContents:
-  article: True
+  article: true
 draft: false
 ---
 {{< lead >}}
 Post configuration avancée d'outils sur un cluster kubernetes
 {{< /lead >}}
+
+{{< case-study
+  contexte="Projet de M2 centre sur des pipelines CI/CD complexes entre developpement local et production."
+  probleme="Industrialiser des deploiements fiables tout en comparant les approches push et pull."
+  solution="Mise en oeuvre de GitLab CI/CD, Kubernetes, ArgoCD et Helm avec environnements k3d et AKS."
+  impact="Pipeline reproductible, meilleure separation des responsabilites et approche GitOps exploitable en production."
+  stack="GitLab CI/CD, Kubernetes, ArgoCD, Helm, Terraform, Docker, AKS"
+>}}
 
 
 # Contexte 
@@ -80,5 +95,7 @@ kubectl create secret docker-registry gitlab-registry-secret -n ocf-core-namespa
 kubectl port-forward svc/argocd-server -n argocd 8888:443 
 kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
 ```
+
+{{< related >}}
 
 

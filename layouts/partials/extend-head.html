@@ -1,0 +1,59 @@
+{{- /* Extra SEO metadata and JSON-LD injected into <head>. */ -}}
+{{- $title := .Title -}}
+{{- $description := .Description | default .Summary | default site.Params.description -}}
+{{- $image := "" -}}
+{{- with .Params.featuredImage -}}
+  {{- $image = . | absURL -}}
+{{- else -}}
+  {{- with site.Params.author.image -}}
+    {{- $image = . | absURL -}}
+  {{- end -}}
+{{- end -}}
+<link rel="canonical" href="{{ .Permalink }}">
+<meta name="description" content="{{ $description | plainify }}">
+{{- with .Params.keywords -}}
+<meta name="keywords" content="{{ delimit . ", " }}">
+{{- end -}}
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $description | plainify }}">
+<meta property="og:url" content="{{ .Permalink }}">
+{{- with $image }}
+<meta property="og:image" content="{{ . }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ . }}">
+{{- else }}
+<meta name="twitter:card" content="summary">
+{{- end }}
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $description | plainify }}">
+
+{{- if .IsPage -}}
+<script type="application/ld+json">
+{{- dict
+  "@context" "https://schema.org"
+  "@type" "Article"
+  "headline" .Title
+  "description" ($description | plainify)
+  "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")
+  "dateModified" ((.Lastmod | default .Date).Format "2006-01-02T15:04:05Z07:00")
+  "author" (dict "@type" "Person" "name" (site.Params.author.name | default site.Title))
+  "mainEntityOfPage" .Permalink
+  "url" .Permalink
+  "keywords" (.Params.keywords | default (slice))
+  "about" (.Params.tags | default (slice))
+  "image" (cond (ne $image "") (slice $image) (slice))
+| jsonify | safeHTML }}
+</script>
+{{- else if .IsHome -}}
+<script type="application/ld+json">
+{{- dict
+  "@context" "https://schema.org"
+  "@type" "Person"
+  "name" (site.Params.author.name | default site.Title)
+  "url" site.BaseURL
+  "jobTitle" (site.Params.author.headline | default "Cloud & DevOps Engineer")
+  "description" (site.Params.author.bio | default site.Params.description)
+| jsonify | safeHTML }}
+</script>
+{{- end -}}
