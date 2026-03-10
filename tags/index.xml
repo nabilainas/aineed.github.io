@@ -6,20 +6,27 @@
     <description>Recent content in Tags on Nabil AÏNAS</description>
     <generator>Hugo</generator>
     <language>fr</language>
-    <lastBuildDate>Fri, 06 Mar 2026 23:15:48 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 10 Mar 2026 23:39:15 +0100</lastBuildDate>
     <atom:link href="https://aineed.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Cicd</title>
-      <link>https://aineed.dev/tags/cicd/</link>
+      <title>Argocd</title>
+      <link>https://aineed.dev/tags/argocd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://aineed.dev/tags/cicd/</guid>
+      <guid>https://aineed.dev/tags/argocd/</guid>
       <description></description>
     </item>
     <item>
-      <title>Cloud</title>
-      <link>https://aineed.dev/tags/cloud/</link>
+      <title>Azure</title>
+      <link>https://aineed.dev/tags/azure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://aineed.dev/tags/cloud/</guid>
+      <guid>https://aineed.dev/tags/azure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Container-Apps</title>
+      <link>https://aineed.dev/tags/container-apps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aineed.dev/tags/container-apps/</guid>
       <description></description>
     </item>
     <item>
@@ -27,13 +34,6 @@
       <link>https://aineed.dev/tags/deploiement/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aineed.dev/tags/deploiement/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Devops</title>
-      <link>https://aineed.dev/tags/devops/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://aineed.dev/tags/devops/</guid>
       <description></description>
     </item>
     <item>
@@ -58,17 +58,17 @@
       <description></description>
     </item>
     <item>
-      <title>Engineering</title>
-      <link>https://aineed.dev/tags/engineering/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://aineed.dev/tags/engineering/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Ia</title>
       <link>https://aineed.dev/tags/ia/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://aineed.dev/tags/ia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Integration</title>
+      <link>https://aineed.dev/tags/integration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aineed.dev/tags/integration/</guid>
       <description></description>
     </item>
   </channel>
