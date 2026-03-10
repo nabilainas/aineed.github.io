@@ -131,6 +131,8 @@ Après coup, c'est plutôt logique qu'il réponde bon, car comme vous le savez m
 
 ![horssujet](./assets/horssujet.png)
 
+![dumb](./assets/dumb.png)
+
 ## Pourquoi c'est cool?
 
 - **100% local**: mes donnees ne quittent jamais mon Mac (ultra important)
