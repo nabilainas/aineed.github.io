@@ -4,7 +4,7 @@ groupByYear: false
 date: 2024-10-10
 description: "Case study de deploiement continu d'une application sur Azure Container Apps avec outillage DevOps."
 summary: "Comparaison de choix de deploiement cloud et retour d'experience autour d'Azure Container Apps vs Kubernetes."
-tags: ["devops", "deploiement", "cloud"]
+tags: ["azure", "container-apps", "deploiement"]
 categories: ["projet", "case-study"]
 technos: ["azure", "terraform", "ansible", "prometheus", "grafana", "github-actions"]
 series: ["Case Studies Cloud"]

@@ -11,7 +11,7 @@ series: []
 keywords: []
 showComments: false
 showTableOfContents:
-	article: true
+  article: true
 ---
 
 {{< lead >}}

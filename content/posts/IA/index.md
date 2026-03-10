@@ -4,7 +4,7 @@ groupByYear: false
 date: 2024-09-04
 description: "Comment integrer des capacites IA dans une application via APIs de modeles de langage, sans equipe ML dediee."
 summary: "Un retour d'experience sur l'integration de modeles IA via API: benefices, limites et bonnes pratiques de mise en oeuvre."
-tags: ["ia", "api", "engineering"]
+tags: ["ia", "api", "integration"]
 categories: ["architecture"]
 technos: ["openai", "python"]
 series: ["Construire des applications IA pragmatiques"]

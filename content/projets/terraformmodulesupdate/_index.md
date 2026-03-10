@@ -4,7 +4,7 @@ groupByYear: false
 date: 2025-03-09
 description: "Projet d'automatisation de mise a jour de modules Terraform pour reduire la dette technique d'infrastructure."
 summary: "Conception d'un script pour detecter et mettre a jour les versions de modules Terraform a grande echelle."
-tags: ["terraform", "automation", "devops"]
+tags: ["terraform", "modules", "automation"]
 categories: ["projet", "case-study"]
 technos: ["terraform", "python", "api"]
 series: ["Case Studies Cloud"]

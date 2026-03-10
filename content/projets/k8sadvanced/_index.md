@@ -4,7 +4,7 @@ groupByYear: false
 date: 2024-10-10
 description: "Case study d'un projet CI/CD avance: GitLab, Kubernetes, ArgoCD, Helm, et environnements local/AKS."
 summary: "Mise en place de deux modeles CI/CD (push et pull) avec outillage cloud-native de bout en bout."
-tags: ["kubernetes", "cicd", "gitops"]
+tags: ["kubernetes", "gitops", "argocd"]
 categories: ["projet", "case-study"]
 technos: ["kubernetes", "k3d", "aks", "gitlab-ci", "argocd", "helm", "terraform", "docker"]
 series: ["Case Studies Cloud"]
