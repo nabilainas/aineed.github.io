@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fine-Tuning on Nabil AÏNAS</title>
+    <link>https://aineed.dev/tags/fine-tuning/</link>
+    <description>Recent content in Fine-Tuning on Nabil AÏNAS</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <lastBuildDate>Wed, 11 Mar 2026 23:17:20 +0100</lastBuildDate>
+    <atom:link href="https://aineed.dev/tags/fine-tuning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>J&#39;ai entraîné une IA sur mon Mac en 10 minutes</title>
+      <link>https://aineed.dev/posts/finetuning-llm-mac-m2/</link>
+      <pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://aineed.dev/posts/finetuning-llm-mac-m2/</guid>
+      <description>Un test rapide de fine-tuning local avec TinyLlama sur Mac M2 : setup, commande, résultat.</description>
+    </item>
+  </channel>
+</rss>
